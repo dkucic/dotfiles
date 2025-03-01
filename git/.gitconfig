@@ -1,0 +1,16 @@
+[user]
+	email = dkucic@gmail.com
+	name = dkucic
+[alias]
+        p = "!f() { \
+            git add . && \
+            git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && \
+            git push; \
+        }; f"
+
+        unstage = "reset HEAD --"
+        discard = "checkout --"
+        fdiscard = "reset --hard HEAD"
+        fpull = "pull --rebase"
+[init]
+	defaultBranch = main
