@@ -1,16 +1,20 @@
-[user]
-	email = dkucic@gmail.com
-	name = dkucic
+[include]
+    # Include path to global user git credentials
+    # content of ~/.gitconfig_user
+    # [user]
+    #   email = somemailaddress
+    #   name = somename
+    path = ~/.gitconfig_user
 [alias]
-        p = "!f() { \
-            git add . && \
-            git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && \
-            git push; \
-        }; f"
+    p = "!f() { \
+	git add . && \
+	git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && \
+	git push; \
+    }; f"
 
-        unstage = "reset HEAD --"
-        discard = "checkout --"
-        fdiscard = "reset --hard HEAD"
-        fpull = "pull --rebase"
+    unstage = "reset HEAD --"
+    discard = "checkout --"
+    fdiscard = "reset --hard HEAD"
+    fpull = "pull --rebase"
 [init]
-	defaultBranch = main
+    defaultBranch = main
