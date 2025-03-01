@@ -13,7 +13,6 @@
     }; f"
 
     unstage = "reset HEAD --"
-    discard = "checkout --"
     fdiscard = "reset --hard HEAD"
     fpull = "pull --rebase"
 [init]
