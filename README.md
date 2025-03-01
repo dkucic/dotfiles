@@ -89,7 +89,7 @@ This script automates the process of checking and backing up existing config fil
 
 - If a config file **already exists**, it is backed up as `{filename}_orig`.
 - Then, the script **creates symlinks** to the corresponding dotfiles.
-- Using `*` will back up and symlink **all dotfiles** except `README.md` and `.git`.
+- Using `*` will back up and symlink **all dotfiles** except `stow_wrapper.sh`, `README.md` and `.git`.
 
 **Example Usage:**
 ```bash
