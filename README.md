@@ -7,7 +7,7 @@ This repository contains my personal configuration files (dotfiles), organized t
 GNU Stow is a symlink manager that helps keep your dotfiles organized while making them available in your home directory.
 
 ## Repository Structure
-
+Below is an example repository structure which is prone to changes.
 ```
 dotfiles/
 ├── bash/
@@ -87,7 +87,8 @@ stowdot -R git  # to restow git files
 
 This script automates the process of checking and backing up existing config files before symlinking them.
 
-- If a config file **already exists**, it is backed up as `{filename}_orig`.
+- If a config file **already exists**, it is backed up as `{filename}_orig`. On subsequent runs, {filename}_orig will be overwritten.
+  This is not a substitute for backup.
 - Then, the script **creates symlinks** to the corresponding dotfiles.
 - Using `*` will back up and symlink **all dotfiles** except `stow_wrapper.sh`, `README.md` and `.git`.
 
