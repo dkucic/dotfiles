@@ -1,6 +1,14 @@
 #!/bin/bash
-# stow_wrapper.sh - A simple wrapper for GNU Stow with automatic backups
-# ./stow_wrapper.sh * stows all packages except README.md, stow_wrapper.sh and .git
+
+# ------------------------------------------------------------------------------------
+# 2025, by dkucic  
+# Description: A simple wrapper for GNU Stow with automatic backup.
+# GNU Stow: https://www.gnu.org/software/stow/
+# Disclaimer:  
+# This script is free to use but provided "AS IS," without any warranties,  
+# express or implied. The author is not liable for any damages, data loss,  
+# or other issues arising from its use. Use at your own risk.  
+# ------------------------------------------------------------------------------------
 
 # Configuration
 DOTFILES_DIR="$HOME/GitRepos/dotfiles"
