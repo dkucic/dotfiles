@@ -15,7 +15,7 @@ chmod 600 ~/.ssh/config
 
 > **📝 NOTE:**  
 > The templating command syntax differs depending on whether you're using  
-> **`j2cli` (j2)** or Python’s Jinja2 directly. However, the **jinja2 template remains the same**.
+> **`j2cli` (j2)** or Python’s Jinja2 directly. However, the jinja2 template remains the same.
 
 
 
