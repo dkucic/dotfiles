@@ -21,8 +21,8 @@ if [ -x "$(command -v kubectl)" ]; then
 fi
 
 # if z utility is installed
-if [ -f '/usr/libexec/z.sh' ]; then
-  . /usr/libexec/z.sh
+if [ -f "$HOME/.local/bin/z.sh" ]; then
+  . $HOME/.local/bin/z.sh
 fi
 
 if [[ $(hostname) != *toolbox* ]]; then
